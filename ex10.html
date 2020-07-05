@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+      var arr = {
+        "programmer":"fanaa",
+        "designer":"kaka"
+      };
+      document.write("programmer : " + arr.programmer+'<br>');
+      document.write("desiger : " + arr.designer+'<br>');
+      arr["data scientist"] = "dada";
+      document.write("data scientist : " + arr["data scientist"]+'<br>');
+    </script>
+    <script>
+      for(var key in arr){
+        document.write(arr[key]+'<br>');
+      }
+    </script>
+    <h2>property & mathod</h2>
+    <script>
+      arr.showALL = function() {
+        for(var key in this){
+          document.write(this[key]+'<br>');
+        }
+      }
+      arr.showALL();
+    </script>
+  </body>
+</html>
